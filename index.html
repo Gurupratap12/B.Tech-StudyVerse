@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collage Notes</title>
+    <link rel="shortcut icon"
+        href="https://i.etsystatic.com/16237790/r/il/01ac86/7025004836/il_1080xN.7025004836_g8vp.jpg"
+        type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div class="text-center mt-12">
+        <h1 class="text-4xl font-extrabold tracking-tight 
+             bg-gradient-to-r from-blue-500 to-purple-600 
+             text-transparent bg-clip-text drop-shadow-sm">
+            Welcome To B.Tech StudyVerse
+        </h1>
+        <p class="mt-3 text-gray-500 text-sm md:text-base 
+            max-w-md mx-auto leading-relaxed">
+            Login to access your notes, previous year questions,
+            and continue your learning journey with ease.
+        </p>
+
+    </div>
+    <div
+        class="flex items-center justify-center h-screen bg-gray-300 bg-[url('https://media.istockphoto.com/id/1012160598/photo/ballpoint-pen-and-a-mobile-phone-resting-on-top-of-documents-to-sign.jpg?s=170667a&w=0&k=20&c=f6-93E7reTsI3Mc6CvLKcOSU9NSEdStW7l86bUaeYQQ=')] bg-no-repeat bg-cover bg-center">
+        <div class="bg-white/30 backdrop-blur-2xl w-96 md:w-80 p-8 rounded-x1 shadow-2xl h-92">
+            <h2 class="text-3xl font-bold mb-4 text-center text-white shadow-sm pb-3">Login/Sign-up</h2>
+
+            <input type="email" id="email" required placeholder="Enter you Email"
+                class="w-full h-12 border border-gray-300 rounder px-4 mb-4 focus:outline-none focus:ring-2 focus:ring-white/70">
+            <input type="password" id="password" required placeholder="Enter you password"
+                class="w-full h-12 border border-gray-300 rounder px-4 mb-6 focus:outline-none focus:ring-2 focus:ring-white/70">
+            <div class="absolute flex space-x-10">
+                <button id="loginBtn"
+                    class="px-6 py-3 bg-white/30 h-12 text-white rounded hover:bg-white/50 font-bold transition">Login</button>
+                <button id="signupBtn"
+                    class="px-6 py-3 bg-white/30 h-12 text-white rounded hover:bg-white/50 font-bold transition">Sign-up</button>
+            </div>
+            <div>
+                <p class="w-full mx-1  absolute m-20 text-sha">Sign-up if you have no account!</p>
+            </div>
+        </div>
+    </div>
+    <footer class="fixed bottom-0 w-full backdrop-blur-md bg-white/10 border-t border-white/20 shadow-lg">
+        <div class="flex justify-center space-x-8 text-lg">
+
+            <a href="https://wa.me/919528456753" target="_blank" class="hover:text-green-400 flex items-center gap-2">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <span class="text-gray-300 text-sm">
+                Need help? Contact us
+            </span>
+            <a href="https://instagram.com/itz_guru_pratap._" target="_blank"
+                class="hover:text-pink-400 flex items-center gap-2">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+        </div>
+    </footer>
+    <script type="module" src="login.js"></script>
+</body>
+
+</html>
