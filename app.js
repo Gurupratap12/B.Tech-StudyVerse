@@ -19,10 +19,10 @@ const semesterData = {
     PPS:"PPS"
   },
 semester2 : {
-  math: "bet",
-  bet: "math",
-  chemistry: "chemistry",
-  english: "english"
+  Math: "bet",
+  BET: "math",
+  Chemistry: "chemistry",
+  English: "english"
   }
 };
 let currentSemester = "semester2";
@@ -55,7 +55,6 @@ function loadSubject() {
         <h1 class="text-xl font-bold text-white">Subjects</h1>
       </div>
 
-      <!-- 📚 Cards BELOW -->
       <div id="cards" 
         class="mt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       </div>
@@ -65,15 +64,16 @@ function loadSubject() {
 
   const cardsContainer = document.querySelector("#cards");
 
-  Object.keys(subjects).forEach(id => {
+  Object.keys(subjects).forEach(displayName => {
+    const docName = subjects[displayName];
     cardsContainer.innerHTML += `
-      <div onclick="showOptions('${id}')" 
+      <div onclick="showOptions('${docName}')" 
         class="cursor-pointer hover:shadow-xl hover:scale-105 hover:rotate-3 
         transition-all duration-300 bg-gray-200 shadow-md rounded-lg p-4 
         text-center">
 
         <h1 class="text-xl font-bold">
-          ${id.charAt(0).toUpperCase() + id.slice(1)}
+          ${displayName}
         </h1>
         <p>All notes & PYQs</p>
 
