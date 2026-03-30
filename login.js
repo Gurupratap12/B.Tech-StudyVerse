@@ -1,8 +1,6 @@
-/ Import Firebase modules
+// Import Firebase modules
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
-import { onAuthStateChanged } 
-from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
 
   // Firebase config
   const firebaseConfig = {
@@ -20,9 +18,6 @@ from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
 
  const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
-const emial = document.getElementById("email");
-const password = document.getElementById("password");
-
 
 loginBtn.addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email.value, password.value)
