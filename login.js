@@ -22,6 +22,12 @@ const password = document.getElementById("password");
  const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
 
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // already logged in
+    window.location.href = "semester.html";
+  }
+});
 loginBtn.addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
