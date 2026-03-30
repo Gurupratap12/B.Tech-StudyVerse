@@ -16,6 +16,9 @@
   const app = initializeApp(firebaseConfig);
   const auth = getAuth(app);
 
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+
  const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
 
