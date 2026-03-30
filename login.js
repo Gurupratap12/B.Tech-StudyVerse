@@ -1,7 +1,7 @@
   // Import Firebase modules
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-app.js";
   import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
-
+  import { onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.11.0/firebase-auth.js";
   // Firebase config
   const firebaseConfig = {
   apiKey: "AIzaSyArw35FUsbZBvestPAGpownObSy1eYggoU",
@@ -18,7 +18,11 @@
 
  const loginBtn = document.getElementById("loginBtn");
 const signupBtn = document.getElementById("signupBtn");
-
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    window.location.href = "semester.html";
+  }
+});
 loginBtn.addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
