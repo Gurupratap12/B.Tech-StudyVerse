@@ -23,11 +23,6 @@ const signupBtn = document.getElementById("signupBtn");
 const emial = document.getElementById("email");
 const password = document.getElementById("password");
 
-onAuthStateChanged(auth, (user) => {
-  if (user) {
-    window.location.href = "semester.html";
-  }
-});
 
 loginBtn.addEventListener("click", () => {
   signInWithEmailAndPassword(auth, email.value, password.value)
