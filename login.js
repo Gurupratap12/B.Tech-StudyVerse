@@ -32,7 +32,7 @@ loginBtn.addEventListener("click", () => {
 signupBtn.addEventListener("click", () => {
   createUserWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
-      window.location.href = "semeste.html";
+      window.location.href = "semester.html";
     })
     .catch((error) => {
       alert(error.message);
